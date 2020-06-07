@@ -20,6 +20,13 @@ class MainActivity : BaseActivity() {
 
     override fun setupEvents() {
 
+        callBtn.setOnClickListener {
+            val myUri = Uri.parse("tel:${phoneNumTxt.text}")
+            val myIntent = Intent(Intent.ACTION_CALL, myUri)
+            startActivity(myIntent)
+
+        }
+
         profileImg.setOnClickListener {
             val myIntent = Intent(mContext, ViewProfileImageActivity::class.java)
             startActivity(myIntent)
