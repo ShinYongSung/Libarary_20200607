@@ -11,34 +11,24 @@ import kotlin.math.log
 
 class MainActivity : BaseActivity() {
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setupEvents()
         setValues()
-
     }
-
 
     override fun setupEvents() {
 
         profileImg.setOnClickListener {
             val myIntent = Intent(mContext, ViewProfileImageActivity::class.java)
             startActivity(myIntent)
-
         }
 
     }
-
     override fun setValues() {
 
-        Glide.with(mContext).load("https://img.hankyung.com/photo/201910/03.20863999.1.jpg").into(profileImg)
-
+        Glide.with(mContext).load("http://img.hankyung.com/photo/201910/03.20863999.1.jpg").into(profileImg)
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-    }
 }
