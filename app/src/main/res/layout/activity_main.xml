@@ -18,7 +18,7 @@
         <ImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:src="@drawable"/>
+            android:src="@drawable/IU_pic"/>
 
 
 
@@ -38,7 +38,7 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="1"/>
 
         <TextView
             android:layout_width="wrap_content"
